@@ -29,6 +29,17 @@ jobs:
         with:
           credentials_json: '${{ secrets.SAMPLE1_SA }}'
 
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            us-south1-docker.pkg.dev/cyber-457119/cyber-lab/cyber
+          tags: |
+            type=sha,prefix=
+            # set latest tag for default branch
+            type=raw,value=latest,enable={{is_default_branch}}
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
@@ -37,4 +48,4 @@ jobs:
           context: ./apps/computer_networks
           platforms: linux/amd64
           push: true
-          tags: ${{ github.ref }}, "latest"
+          tags: ${{ steps.meta.outputs.tags }}
