@@ -29,6 +29,13 @@ jobs:
         with:
           credentials_json: '${{ secrets.SAMPLE1_SA }}'
 
+      - name: Authorize Docker
+        uses: docker/login-action@v3
+        with:
+          registry: us-south1-docker.pkg.dev
+          username: oauth2accesstoken
+          password: ${{ steps.auth.outputs.access_token }}
+
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
