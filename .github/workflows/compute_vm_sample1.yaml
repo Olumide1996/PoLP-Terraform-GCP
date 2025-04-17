@@ -13,7 +13,7 @@ jobs:
       contents: 'read'
       id-token: 'write'
 
-    name: Build image
+    name: Create Conpute VM
     runs-on: ubuntu-latest
     steps:
 
