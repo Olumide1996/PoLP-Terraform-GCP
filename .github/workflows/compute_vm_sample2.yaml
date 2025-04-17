@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ".github/workflows/comppute_vm_sample2.yaml"
 
 jobs:
   build:
