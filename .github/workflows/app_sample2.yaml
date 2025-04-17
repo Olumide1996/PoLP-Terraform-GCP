@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            us-south1-docker.pkg.dev/cyber-457119/cyber-lab/cyber
+            us-south1-docker.pkg.dev/cyber-457119/cyber-lab/cyber_2
           tags: |
             type=sha,prefix=
             # set latest tag for default branch
@@ -44,7 +44,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          cache-from: type=registry,ref=us-south1-docker.pkg.dev/cyber-457119/cyber-lab/cyber:latest
+          cache-from: type=registry,ref=us-south1-docker.pkg.dev/cyber-457119/cyber-lab/cyber_2:latest
           cache-to: type=inline
           context: ./apps/computer_networks
           platforms: linux/amd64
