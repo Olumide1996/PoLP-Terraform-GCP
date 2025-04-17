@@ -1,0 +1,4 @@
+/     Basic realm="Restricted Area"
+      Auth-Type: Basic
+      Auth-User: myusername
+      Auth-Pass: mypassword
