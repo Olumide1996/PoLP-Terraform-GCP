@@ -1,4 +1,4 @@
-name: Build and push Image to Artifact Registry
+name: Sample 1 Service Account  Build and push Image to Artifact Registry
 
 on:
   push:

@@ -1,5 +1,4 @@
-name: Build and push Image to Artifact Registry
-
+name: Sample 2 Service Account Creates a VM
 on:
   push:
     branches:
