@@ -1,3 +1,6 @@
+#This workflow simulates a build and push of a Docker image to Google Artifact Registry using a service account(SA1).
+# It uses the Docker Buildx and Docker Metadata actions to build the image and tag it appropriately.
+
 name: Sample 1 Service Account  Build and push Image to Artifact Registry
 
 on:

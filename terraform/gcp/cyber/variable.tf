@@ -1,3 +1,5 @@
+#This stores the project variables such as project_id and region
+
 variable "project_id" {
     type        = string
     description = "The project ID to deploy resources"

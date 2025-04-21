@@ -13,6 +13,7 @@ resource "google_service_account" "sample_2" {
   display_name = "Second Service Account"
 }
 
+# Creation of Granular Roles for SA1
 # Allow writing to Artifact Registry
 resource "google_project_iam_member" "github_actions_artifactregistry_writer" {
   member  = "serviceAccount:${google_service_account.sample_1.email}"
@@ -27,6 +28,7 @@ resource "google_project_iam_member" "github_actions_storage_objectcreator" {
   project = var.project_id
 }
 
+#Creation of generic role for SA 2
 # grant editor level permisson to service account sample_2 which is bad
 resource "google_project_iam_member" "github_actions_editor" {
   member  = "serviceAccount:${google_service_account.sample_2.email}"

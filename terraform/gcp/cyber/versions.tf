@@ -1,3 +1,4 @@
+#This instructs terraform that we are working with google cloud platform
 terraform {
   required_providers {
     google = {

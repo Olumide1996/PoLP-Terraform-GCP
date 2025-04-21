@@ -1,3 +1,7 @@
+#This simualtes an attacker creating a VM using a service account (SA2).
+# It uses the gcloud command to create a VM instance in the specified zone and machine type.
+# This workflow is triggered on pushes to the main branch and only when changes are made to the specified path.
+
 name: Sample 2 Service Account Creates a VM
 on:
   push:
