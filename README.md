@@ -2,8 +2,6 @@
 # Implementing the Principle of Least Privilege for Cloud Infrastructure Using Terraform
 
 **Author:** Adebisi Olumide  
-**Panther ID:** 002676825  
-**Campus ID:** oadebisi4  
 **Date:** April 27, 2025
 
 ---
