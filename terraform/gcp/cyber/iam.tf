@@ -1,5 +1,6 @@
 /*
  * # grants permissons for PoLP demo
+ # IAM (Identity and Access Management)
  */
 
 # this creates service account sample 1 and 2
